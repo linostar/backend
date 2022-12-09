@@ -5,7 +5,7 @@ const init = async () => {
   await db.run('CREATE TABLE Friends (id INTEGER PRIMARY KEY AUTOINCREMENT, userId int, friendId int);');
   const users = [];
   const names = ['foo', 'bar', 'baz'];
-  for (i = 0; i < 27000; ++i) {
+  for (i = 0; i < 2700; ++i) {
     let n = i;
     let name = '';
     for (j = 0; j < 3; ++j) {
